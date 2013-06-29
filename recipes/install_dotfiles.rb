@@ -11,7 +11,7 @@ git "/Users/#{node['current_user']}/.files" do
 end
 
 execute "symlink_dotfiles" do
-  command "/Users/#{node['curent_user']}/.files/symlink_dotfiles.sh"
+  command "/Users/#{node['current_user']}/.files/symlink_dotfiles.sh"
   user node['current_user']
   action :nothing
 end
