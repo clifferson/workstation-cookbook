@@ -6,4 +6,10 @@
 
 git "/Users/#{node['current_user']}/.files" do
   repository "https://github.com/clifferson/dotfiles.git"
+  notifies :run, "execute[symlink_dotfiles]"
+end
+
+execute "symlink_dotfiles" do
+  command "/Users/#{node['curent_user']}/.files/symlink_dotfiles.sh"
+  action :nothing
 end
