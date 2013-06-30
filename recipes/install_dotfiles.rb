@@ -6,7 +6,7 @@
 
 git "/Users/#{node['current_user']}/.files" do
   repository "https://github.com/clifferson/dotfiles.git"
-  reference "master"
+  revision "master"
   notifies :run, "execute[symlink_dotfiles]"
   user node['current_user']
 end
