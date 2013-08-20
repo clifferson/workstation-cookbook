@@ -29,15 +29,3 @@ link "#{library_app_support}/SizeUp/SizeUp.sizeuplicense" do
   to "#{misc_dbox_dir}/SizeUp.sizeuplicense"
   owner node['current_user']
 end
-
-# install the Alfred licence.
-#include_recipe "sprout-osx-apps::alfred"
-
-directory "#{library_app_support}/Alfred" do
-  owner node['current_user']
-end
-
-link "#{library_app_support}/Alfred/license.plist" do
-  to "#{misc_dbox_dir}/Alfred.license.plist"
-  owner node['current_user']
-end
