@@ -12,4 +12,5 @@ end
 execute "update_git_submodules" do
   command "git submodule update --init"
   cwd "/Users/#{node['current_user']}/.vim"
+  user node['current_user']
 end
