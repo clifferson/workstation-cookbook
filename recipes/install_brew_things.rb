@@ -1,3 +1,6 @@
-%w(autojump).each do |brewski|
+%w(
+  autojump
+  node
+).each do |brewski|
   brew brewski
 end
