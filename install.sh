@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+BREW=/usr/local/bin/brew
+
 # Check for Homebrew, Install if we don't have it
 if test ! $(which brew); then
   echo "Installing homebrew..."
@@ -8,20 +10,20 @@ fi
 
 # Update homebrew recipes
 echo "updating homebrew..."
-brew update
+${BREW} update
 
 # Install GNU core utilities (those that come with OS X are outdated)
-brew install coreutils
+${BREW} install coreutils
 
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
-brew install findutils
+${BREW} install findutils
 
 # Install Bash 4
-#brew install bash
+#${BREW} install bash
 
 # Install more recent versions of some OS X tools
-brew tap homebrew/dupes
-brew install homebrew/dupes/grep
+${BREW} tap homebrew/dupes
+${BREW} install homebrew/dupes/grep
 
 # Brew install some shell stuff
 binaries=(
@@ -36,20 +38,20 @@ binaries=(
 )
 
 echo "installing shell stuff..."
-brew install ${binaries[@]}
+${BREW} install ${binaries[@]}
 
 echo "cleaning up brew..."
-brew cleanup
+${BREW} cleanup
 
 echo "installing cask..."
-brew install caskroom/cask/brew-cask
+${BREW} install caskroom/cask/brew-cask
 
 # Install Dropbox first outa the loop becuase a lot of things live there
-if brew cask list dropbox
+if ${BREW} cask list dropbox
 then
-  brew cask install dropbox
+  ${BREW} cask install dropbox
 else
-  brew cask install dropbox
+  ${BREW} cask install dropbox
   open ~/Applications/Dropbox.app
   read -p "Press [Enter] after you have logged into Dropbox"
 fi 
@@ -79,7 +81,7 @@ apps=(
 )
 
 echo "installing apps..."
-brew cask install ${apps[@]}
+${BREW} cask install ${apps[@]}
 
 #echo "linking casks..."
 # HAve to do some kind of fix for this.
