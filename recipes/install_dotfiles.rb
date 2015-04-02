@@ -1,10 +1,6 @@
-#execute "install_dotfiles" do
-#  command "curl -L https://raw.github.com/clifferson/dotfiles/master/install.sh | sh"
-#  creates "~/.files"
-#  action :run
-#end
+dotfiles_dir = "#{node.dirs.homedir}/.file"
 
-git "/Users/#{node['current_user']}/.files" do
+git dotfiles_dir do
   repository "https://github.com/clifferson/dotfiles.git"
   revision "master"
   notifies :run, "execute[symlink_dotfiles]"
@@ -12,7 +8,7 @@ git "/Users/#{node['current_user']}/.files" do
 end
 
 execute "symlink_dotfiles" do
-  command "/Users/#{node['current_user']}/.files/symlink_dotfiles.sh"
+  command "#{dotfiles_dir}/symlink_dotfiles.sh"
   user node['current_user']
   action :nothing
 end

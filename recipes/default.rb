@@ -6,3 +6,7 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+
+include_recipe "workstation::sizeup"
+include_recipe "workstation::install_dotfiles"
+include_recipe "workstation::install_dotvim"
