@@ -16,5 +16,8 @@ Gemfile.lock
 bin/*
 .bundle/*
 
+# Chef Zero
+/nodes
+
 .kitchen/
 .kitchen.local.yml
