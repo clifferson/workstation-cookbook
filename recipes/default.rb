@@ -10,3 +10,4 @@
 include_recipe "workstation::sizeup"
 include_recipe "workstation::install_dotfiles"
 include_recipe "workstation::install_dotvim"
+include_recipe "workstation::link_ssh"
