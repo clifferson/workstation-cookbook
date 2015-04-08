@@ -1,4 +1,4 @@
-dotfiles_dir = "#{node.dirs.homedir}/.file"
+dotfiles_dir = "#{node.dirs.homedir}/.files"
 
 git dotfiles_dir do
   repository "https://github.com/clifferson/dotfiles.git"
