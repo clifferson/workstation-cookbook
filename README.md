@@ -4,5 +4,4 @@ Collection of recipes paired with install.sh and brew/cask used to configure my 
 
 Usage
 =====
-curl https://raw.githubusercontent.com/clifferson/workstation-cookbook/master/install.sh | sh
-
+curl http://bit.ly/osxinstallsh | sh
