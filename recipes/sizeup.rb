@@ -21,3 +21,7 @@ link "#{library_app_support}/SizeUp/SizeUp.sizeuplicense" do
   to "#{sizeup_dropbox_dir}/SizeUp.sizeuplicense"
   owner node['current_user']
 end
+
+# TODOS
+# Enable sizeup for accesability? 
+# automatically start at login
