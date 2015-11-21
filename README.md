@@ -4,4 +4,4 @@ Collection of recipes paired with install.sh and brew/cask used to configure my 
 
 Usage
 =====
-curl http://bit.ly/osxinstallsh | sh
+curl -L http://bit.ly/osxinstallsh | sh
