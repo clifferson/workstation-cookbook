@@ -68,12 +68,12 @@ apps=(
  iterm2
  adium
  hipchat
- skype
+ #skype
  vlc
  java
  spotify
- league-of-legends
- steam
+ #league-of-legends
+ #steam
  qq
  vagrant
  virtualbox
@@ -87,11 +87,8 @@ ${BREW} cask install ${apps[@]}
 #brew cask alfred link
 ##
 
-
-# Do the chef stuff
-
-# Clone the workstation cookbook and berks the deps.
-git clone https://github.com/clifferson/workstation-cookbook.git /tmp/workstation-cookbook && cd /tmp/workstation-cookbook && berks vendor cookbooks
+# Clone the workstation cookbook and run chef-solo
+git clone https://github.com/clifferson/workstation-cookbook.git /tmp/workstation && chef-solo -c /tmp/workstation/solo.rb -o workstation
 
 ### This is the end
 
