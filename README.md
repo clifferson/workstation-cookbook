@@ -1,16 +1,8 @@
 Description
 ===========
-Random chef recipes I use to install/configure my laptop
-
-Requirements
-============
-dmg and pivotal_workstaion cookbooks
-https://github.com/opscode-cookbooks/dmg
-https://github.com/pivotal/pivotal_workstation
-
-Attributes
-==========
+Collection of recipes paired with install.sh and brew/cask used to configure my laptop
 
 Usage
 =====
+curl https://raw.githubusercontent.com/clifferson/workstation-cookbook/master/install.sh | sh
 
