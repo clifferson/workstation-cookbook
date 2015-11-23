@@ -14,14 +14,25 @@ end
 
 # Install the SizeUp licence
 directory "#{library_app_support}/SizeUp" do
-  owner node['current_user']
+  owner node['sudo_user']
 end
 
 link "#{library_app_support}/SizeUp/SizeUp.sizeuplicense" do
   to "#{sizeup_dropbox_dir}/SizeUp.sizeuplicense"
-  owner node['current_user']
+  owner node['sudo_user']
+end
+
+# Enable 'accessability compuer control' for SizeUp
+
+# Progmatically access the plist namespace of an application
+# /usr/libexec/PlistBuddy -c 'Print CFBundleIdentifier' /Applications/<Appname.app>/Contents/Info.plist
+
+accessability_sqlite_db = "/Library/Application\\ Support/com.apple.TCC/TCC.db"
+
+execute "SizeUp accessability" do
+  user 'root'
+  command "sqlite3 #{accessability_sqlite_db} \"INSERT or REPLACE INTO access VALUES('kTCCServiceAccessibility','com.irradiatedsoftware.SizeUp',0,1,1,NULL,NULL);\""
 end
 
 # TODOS
-# Enable sizeup for accesability? 
 # automatically start at login
