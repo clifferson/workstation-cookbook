@@ -94,7 +94,7 @@ chsh -s /bin/zsh
 ##
 
 # Clone the workstation cookbook and run chef-solo
-git clone https://github.com/clifferson/workstation-cookbook.git /tmp/workstation && chef-solo -c /tmp/workstation/solo.rb -o workstation
+git clone https://github.com/clifferson/workstation-cookbook.git /tmp/workstation && sudo chef-solo -c /tmp/workstation/solo.rb -o workstation
 
 ### This is the end
 
