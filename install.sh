@@ -85,6 +85,9 @@ apps=(
 echo "installing apps..."
 ${BREW} cask install ${apps[@]}
 
+# Make ZSH the default shell
+chsh -s /bin/zsh
+
 #echo "linking casks..."
 # HAve to do some kind of fix for this.
 #brew cask alfred link
@@ -99,4 +102,3 @@ git clone https://github.com/clifferson/workstation-cookbook.git /tmp/workstatio
 ### TODO Get the alfred prefs into this thing.
 ### TODO 1passwd
 ### Tmuxinator?
-### chsh -s /bin/zsh # make zsh default shell
