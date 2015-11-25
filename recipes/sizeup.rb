@@ -35,4 +35,4 @@ execute "SizeUp accessability" do
 end
 
 # TODOS
-# automatically start at login
+# automatically start at login aka "login item"
