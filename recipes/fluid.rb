@@ -8,7 +8,7 @@ end
 
 execute "unzip fluid" do
   command "unzip -q #{Chef::Config[:file_cache_path]}/Fluid.zip Fluid.app/* -d /Applications/"
-  user node['current_user']
+  user node['sudo_user']
   group "admin"
   not_if { File.exists?("/Applications/Fluid.app") }
 end

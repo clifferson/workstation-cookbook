@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+echo "I can has root?"
+sudo true
+
 BREW=/usr/local/bin/brew
 
 # Check for Homebrew, Install if we don't have it
