@@ -1,3 +1,4 @@
 All our Caps lock are belong to control : Keyboard -> Keyboard -> Modifier Keys
 SizeUp startup at login : Users -> Login Items -> + SizeUp
 Start Flux
+Install, configure Junos Pulse client
