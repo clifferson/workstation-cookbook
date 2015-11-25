@@ -3,6 +3,8 @@
 echo "I can has root?"
 sudo true
 
+export SUDO_USER
+
 BREW=/usr/local/bin/brew
 
 # Check for Homebrew, Install if we don't have it
@@ -94,7 +96,7 @@ chsh -s /bin/zsh
 ##
 
 # Clone the workstation cookbook and run chef-solo
-git clone https://github.com/clifferson/workstation-cookbook.git /tmp/workstation && sudo chef-solo -c /tmp/workstation/solo.rb -o workstation
+rm -rf /tmp/workstation && git clone https://github.com/clifferson/workstation-cookbook.git /tmp/workstation && sudo chef-solo -c /tmp/workstation/solo.rb -o workstation
 
 ### This is the end
 
