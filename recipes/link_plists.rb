@@ -1,5 +1,5 @@
 %w(
-  com.hipchat.HipChat
+  com.hipchat.HipChat.plist
   ).each do |plist|
 
   link "#{node.dirs.library_prefs}/#{plist}" do
