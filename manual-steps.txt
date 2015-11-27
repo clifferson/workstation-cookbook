@@ -2,3 +2,4 @@ All our Caps lock are belong to control : Keyboard -> Keyboard -> Modifier Keys
 SizeUp startup at login : Users -> Login Items -> + SizeUp
 Start Flux, set start on boot #plist?
 Install, configure Junos Pulse client
+Chrome, Sync + chrome -> warn before quit
