@@ -3,3 +3,16 @@ SizeUp startup at login : Users -> Login Items -> + SizeUp
 Start Flux, set start on boot #plist?
 Junos Pulse, install from dropbox, add connection
 Chrome, Sync + chrome -> warn before quit
+
+Keyboard shortcuts : Keyboard -> Shortcuts
+
+  * Launchpad & Dock : disable all
+  * Mission Control :
+      Mission Control : command+esc
+      Application windows : control+esc
+      Show Desktop : option+esc
+  * Spotlight:
+      Spotlight search : option+space
+      Finder search : option+command+space
+
+Alfred, change keyboard short cut to command+space
