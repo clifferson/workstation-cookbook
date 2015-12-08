@@ -64,6 +64,7 @@ fi
 # Brew cask install some apps
 apps=(
  alfred
+ battle-net
  chefdk
  google-chrome
  1password
