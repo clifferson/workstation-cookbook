@@ -1,14 +1,14 @@
 library_prefs = node.dirs.library_prefs
 library_app_support = node.dirs.library_app_support
 
-sizeup_dropbox_dir = "#{node.dirs.dropbox_dir}/SizeUp"
+sizeup_icloud_dir = "#{node.dirs.icloud_dir}/SizeUp"
 
 
 # Install the SizeUp prefs plist
 sizeup_plist = "com.irradiatedsoftware.SizeUp.plist"
 
 link "#{library_prefs}/#{sizeup_plist}" do
-  to "#{sizeup_dropbox_dir}/#{sizeup_plist}"
+  to "#{sizeup_icloud_dir}/#{sizeup_plist}"
 end
 
 
@@ -18,7 +18,7 @@ directory "#{library_app_support}/SizeUp" do
 end
 
 link "#{library_app_support}/SizeUp/SizeUp.sizeuplicense" do
-  to "#{sizeup_dropbox_dir}/SizeUp.sizeuplicense"
+  to "#{sizeup_icloud_dir}/SizeUp.sizeuplicense"
   owner node['sudo_user']
 end
 
