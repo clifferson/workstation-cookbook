@@ -54,7 +54,7 @@ ${BREW} install caskroom/cask/brew-cask
 # Brew cask install some apps
 apps=(
  alfred
- battle-net
+ #battle-net
  chefdk
  google-chrome
  1password
@@ -62,15 +62,15 @@ apps=(
  #fluid
  flux
  iterm2
- adium
- hipchat
+ #adium
+ #hipchat
  #skype
  vlc
  java
  spotify
  #league-of-legends
  #steam
- qq
+ #qq
  vagrant
  virtualbox
 )
