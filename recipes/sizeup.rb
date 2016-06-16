@@ -1,7 +1,7 @@
 library_prefs = node.dirs.library_prefs
 library_app_support = node.dirs.library_app_support
 
-sizeup_icloud_dir = "#{node.dirs.icloud_dir}/SizeUp"
+sizeup_icloud_dir = "#{node.dirs.icloud_app_data_dir}/SizeUp"
 
 
 # Install the SizeUp prefs plist

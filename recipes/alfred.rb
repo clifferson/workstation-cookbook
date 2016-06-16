@@ -1,5 +1,5 @@
 alfred2_prefs_location_dir = "#{node['dirs']['library_app_support']}/Alfred\ 2"
-alfred2_app_data_dir = "#{node['dirs']['icloud_dir']}/Alfred\ 2"
+alfred2_app_data_dir = "#{node['dirs']['icloud_app_data_dir']}/Alfred\ 2"
 
 link alfred2_prefs_location_dir do
   to alfred2_app_data_dir
