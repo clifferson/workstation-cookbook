@@ -67,6 +67,7 @@ apps=(
  #skype
  vlc
  java
+ slack
  spotify
  #league-of-legends
  #steam
