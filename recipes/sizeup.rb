@@ -27,12 +27,12 @@ end
 # Progmatically access the plist namespace of an application
 # /usr/libexec/PlistBuddy -c 'Print CFBundleIdentifier' /Applications/<Appname.app>/Contents/Info.plist
 
-accessability_sqlite_db = "/Library/Application\\ Support/com.apple.TCC/TCC.db"
+#accessability_sqlite_db = "/Library/Application\\ Support/com.apple.TCC/TCC.db"
 
-execute "SizeUp accessability" do
-  user 'root'
-  command "sqlite3 #{accessability_sqlite_db} \"INSERT or REPLACE INTO access VALUES('kTCCServiceAccessibility','com.irradiatedsoftware.SizeUp',0,1,1,NULL,NULL);\""
-end
+#execute "SizeUp accessability" do
+#  user 'root'
+#  command "sqlite3 #{accessability_sqlite_db} \"INSERT or REPLACE INTO access VALUES('kTCCServiceAccessibility','com.irradiatedsoftware.SizeUp',0,1,1,NULL,NULL);\""
+#end
 
 # TODOS
 # automatically start at login aka "login item"
