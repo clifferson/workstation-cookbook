@@ -39,7 +39,6 @@ binaries=(
   icdiff
   ack
   autojump
-  go
 )
 
 echo "installing shell stuff..."
@@ -53,8 +52,8 @@ ${BREW} install caskroom/cask/brew-cask
 
 # Brew cask install some apps
 apps=(
- alfred
- #battle-net
+ #alfred
+ battle-net
  chefdk
  google-chrome
  1password
@@ -62,8 +61,6 @@ apps=(
  #fluid
  flux
  iterm2
- #adium
- #hipchat
  #skype
  vlc
  java
@@ -72,8 +69,8 @@ apps=(
  #league-of-legends
  #steam
  #qq
- vagrant
- virtualbox
+ #vagrant
+ #virtualbox
 )
 
 echo "installing apps..."
